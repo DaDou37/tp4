@@ -153,3 +153,15 @@ Ce projet a été réalisé dans le cadre d'un apprentissage du développement d
 ### wave
 
 ![Résultat wave API](doc/wave.png)
+
+### Réponse aux questions 
+
+1) Pourquoi aucune variable VITE_ ne contient de secret ?
+
+Les variables VITE_ sont accessibles côté navigateur. Elles peuvent donc être visibles par les utilisateurs. Elles ne doivent jamais contenir de mot de passe, clé privée ou autre secret.
+
+2) Pourquoi la validation du frontend ne suffit pas ?
+Le frontend peut être contourné ou modifié par l’utilisateur. La validation doit donc également être faite côté API, avec Joi, avant d’enregistrer les données.
+
+3) Pourquoi l’application n’a pas besoin de bandeau cookies ?
+L’application n’utilise pas de cookies, de traceurs publicitaires ou d’outils d’analyse nécessitant le consentement de l’utilisateur.
