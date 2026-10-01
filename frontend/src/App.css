@@ -1,0 +1,203 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: violet;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+/* Messages */
+[role="status"] {
+  background: #dcfce7;
+  color: #166534;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+[role="alert"] {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Boutons */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-top: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.3);
+}
+
+/* Filtres */
+section:nth-of-type(2) div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Bouton filtre sélectionné */
+button[aria-pressed="true"] {
+  background: #1e40af;
+  font-weight: bold;
+}
+
+/* Liste des tâches */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+li label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Informations bénévole */
+li div {
+  margin-top: 12px;
+  color: #555;
+}
+
+/* Boutons dans les tâches */
+li button {
+  margin-right: 8px;
+}
+
+li button:last-child {
+  background: #dc2626;
+}
+
+li button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* Erreur titre */
+#title-error {
+  color: #dc2626;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* Notice RGPD */
+#privacy-notice {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-left: 4px solid #64748b;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    margin: 15px auto;
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

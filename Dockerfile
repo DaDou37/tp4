@@ -1,4 +1,5 @@
 FROM node:alpine
 COPY . /server
 WORKDIR /server
-CMD ["node","src/server.js"]
+USER node
+CMD ["node", "src/server.js"]
