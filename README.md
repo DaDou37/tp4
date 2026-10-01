@@ -138,3 +138,18 @@ Ce projet a été réalisé dans le cadre d'un apprentissage du développement d
 * protection contre les injections SQL et les XSS
 * prise en compte du RGPD
 * gestion du code avec Git
+
+## Tests qualité et accessibilité
+
+### Lighthouse
+
+![Résultat Lighthouse](doc/lighthouse.png)
+
+
+### npm audit - API - Frontend
+
+![Résultat npm audit API](doc/audit.png)
+
+### wave
+
+![Résultat wave API](doc/wave.png)
